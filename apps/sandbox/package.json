@@ -10,7 +10,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
-    "@monorepo-kit/forms": "workspace:*",
+    "@karendt/forms": "workspace:*",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
