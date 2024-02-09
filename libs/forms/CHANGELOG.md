@@ -1,5 +1,14 @@
 # @monorepo-kit/forms
 
+## 1.0.5
+
+### Patch Changes
+
+- 8c7228b: update changeset
+- 2ee812c: update changelog
+- 860586e: update pr log
+- 659f85c: add license
+
 ## 1.0.4
 
 ### Patch Changes
