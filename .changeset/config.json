@@ -4,7 +4,7 @@
   "commit": false,
   "fixed": [],
   "linked": [],
-  "access": "public",
+  "access": "public", 
   "updateInternalDependencies": "patch",
-  "ignore": ["@repo/docs"]
+  "ignore": ["@repo/sandbox"]
 }
