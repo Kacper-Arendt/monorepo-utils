@@ -1,10 +1,12 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
   "commit": false,
   "fixed": [],
   "linked": [],
   "access": "public", 
   "updateInternalDependencies": "patch",
-  "ignore": ["@repo/sandbox"]
+  "ignore": ["@repo/sandbox"],
+  "changelog": ["@changesets/changelog-github", {
+       "repo": "https://github.com/Kacper-Arendt/monorepo-utils"
+      }]
 }
