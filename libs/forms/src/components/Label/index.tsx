@@ -1,6 +1,8 @@
-import styles from './styles.module.css'
+import { LabelHTMLAttributes } from "react";
+import styles from "./styles.module.css";
 
-export function Label(props: React.LabelHTMLAttributes<HTMLLabelElement>) {
-  const { className, ...restProps } = props
-  return <label className={`${className} ${styles.label}`} {...restProps} />
-}
+export const Label = (props: LabelHTMLAttributes<HTMLLabelElement>) => {
+  const { className, ...restProps } = props;
+  // eslint-disable-next-line jsx-a11y/label-has-associated-control
+  return <label className={`${className} ${styles.label}`} {...restProps} />;
+};
