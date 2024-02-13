@@ -6,28 +6,31 @@ import s from "./styles.module.css";
 
 interface ButtonInterface {
   variant?: "outlined" | "contained" | "text";
-  size?: "sm" | "md" | "lg";
+  size?: "small" | "medium" | "large";
   loading?: boolean;
   children: ReactNode;
-  type: "button" | "submit" | "reset";
+  type?: "button" | "submit" | "reset";
   disabled?: boolean;
   className?: string;
+  onClick?: () => void;
 }
 
 export const Button = ({
   children,
-  variant = "outlined",
-  size = "md",
+  variant = "contained",
+  size = "medium",
   type = "button",
   className,
   disabled,
   loading,
+  onClick,
 }: ButtonInterface) => (
   <button
     // eslint-disable-next-line react/button-has-type
     type={type}
-    className={clsx(s.button, { variant, size }, className)}
+    className={clsx(s.button, s[variant], s[size], className)}
     disabled={disabled}
+    onClick={onClick}
   >
     {children}
     {/* todo add loader */}

@@ -7,18 +7,20 @@
     background: none;
 }
 .contained {
+    background: #28a745;
+    border-radius: 0.25rem;
 }
 .text {
 }
 
-.sm {
+.small {
     padding: 0.25rem;
 }
 
-.md {
+.medium {
     padding: 0.5rem;
 }
 
-.lg {
+.large {
     padding: 0.75rem;
 }

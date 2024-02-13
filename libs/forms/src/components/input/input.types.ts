@@ -8,5 +8,5 @@ export interface InputInterface {
   name: string;
   placeholder?: string;
   type: ComponentProps<"input">["type"];
-  size: "small" | "medium" | "large";
+  size?: "small" | "medium" | "large";
 }

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Input, useForm, Form } from "@karendt/forms";
 import { z } from "zod";
+import { Button } from "@karendt/ui";
 
 const userReposListSchema = z.object({
   search: z.string().min(1),
@@ -24,7 +25,7 @@ export default function Page() {
       }}
     >
       <Input type="text" name="search" control={form.control} label="Name" />
-      <button type="submit">Submit</button>
+      <Button type="submit">Submit</Button>
     </Form>
   );
 }
