@@ -1,0 +1,6 @@
+.error{
+    --_color: var(--error-color, #dc3545);
+    
+    color: var(--_color);
+    font-size: 0.9rem;
+}
