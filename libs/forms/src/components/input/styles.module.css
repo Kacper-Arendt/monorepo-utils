@@ -1,0 +1,42 @@
+@import "../../helpers/cssVariables.css";
+
+.input {
+    --_color: var(--primary-text-color, #afafaf);
+    --_errorColor: var(--error-color, #e31b23);
+    --_bgColor: var(--gray-700, hsl(0, 0%, 14%));
+    --_bgColorFocus: var(--gray-800, hsl(0, 7%, 20%));
+    --_borderColor: var(--gray-900, hsl(0, 0%, 10%));
+    --_borderRadius: var(--border-radius-mini, 0.25rem);
+
+    border: 1px solid var(--_borderColor);
+    border-radius: var(--_borderRadius);
+    color: var(--_color);
+    background: var(--_bgColor);
+    transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+    
+}
+
+.input::placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+.input:focus {
+    transform: scale(1.02);
+    background: var(--_bgColorFocus);
+}
+
+.small{
+    padding: 0.5rem;
+    font-size: .75rem;
+}
+
+.medium{
+    padding: 0.75rem 0.5rem;
+    font-size: .8rem;
+}
+.large{
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+}

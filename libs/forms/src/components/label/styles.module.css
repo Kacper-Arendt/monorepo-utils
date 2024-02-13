@@ -1,0 +1,9 @@
+.label{
+    --_color: var(--secondary-text-color, #afafaf);
+    
+    display: flex;
+    flex-direction:column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--_color);;
+}
