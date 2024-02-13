@@ -1,5 +1,3 @@
-@import "../../helpers/cssVariables.css";
-
 .input {
     --_color: var(--primary-text-color, #afafaf);
     --_errorColor: var(--error-color, #e31b23);

@@ -1,3 +1,5 @@
+@import '../../../../../config/cssVariables.css';
+
 .label{
     --_color: var(--secondary-text-color, #afafaf);
     
