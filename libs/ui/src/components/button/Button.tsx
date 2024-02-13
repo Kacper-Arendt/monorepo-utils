@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import clsx from "clsx";
 
 // STYLES
-import s from "./styles.module.scss";
+import s from "./styles.module.css";
 
 interface ButtonInterface {
   variant?: "outlined" | "contained" | "text";
