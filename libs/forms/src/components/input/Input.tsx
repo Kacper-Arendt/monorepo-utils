@@ -40,7 +40,6 @@ export const Input = ({
           placeholder={placeholder}
           disabled={disabled}
           className={clsx(s.input, s[size])}
-          autoComplete="off"
         />
       </Label>
     )}
